@@ -1,13 +1,12 @@
-
+//Nao pode instanciar dessa classe, pq ela eh abstrata 
 public abstract class Funcionario {
 
 	private String nome;
 	private String cpf;
 	private double salario;
-
-	public double getBonificacao() {
-		return this.salario * 0.05;
-	}
+	//Metodo abstrato, que so pode ser utilizado pelos filhos!
+	//eh obrigatorio o filho declarar esse metodo!
+	public abstract double getBonificacao(); 
 
 	public String getNome() {
 		return this.nome;

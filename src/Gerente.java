@@ -16,8 +16,9 @@ public class Gerente extends Funcionario{
 	
 	@Override
 	public double getBonificacao() {
+		System.out.println("Usando a bonificacao do gerente");
 		//usando o metodo super para pegar o método da super class
-		return super.getBonificacao() + super.getSalario();
+		return super.getSalario();
 	}
 	
 	
