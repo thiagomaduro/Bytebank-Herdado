@@ -1,0 +1,14 @@
+
+public class SistemaInterno {
+
+	private int senha = 2222;
+	
+	public void autentica(Autenticavel fa) {
+		boolean autenticou = fa.autentica(this.senha);
+		if(autenticou) {
+			System.out.println("Você está no nosso sistema interno. Seja bem vindo");
+		} else {
+			System.out.println("Você não tem permissão para entrar no nosso sistema interno!");
+		}
+	}
+}
